@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KeyCraft Pro 75 — Беспроводная механическая клавиатура | KeyCraft</title>
+  <meta name="description" content="Флагманская механическая клавиатура KeyCraft Pro 75: горячая замена Hot-Swap, шумоизоляция Poron, алюминиевый корпус CNC.">
+
+  <!-- Локальное подключение Bootstrap CSS -->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <!-- Пользовательские стили проекта поверх Bootstrap -->
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+  <!-- Навигационная панель (Navbar) -->
+  <header class="sticky-top shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2" aria-label="Основная навигация">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <img src="images/logo.svg" alt="KeyCraft Логотип" class="navbar-brand-logo">
+          <span class="fw-bold tracking-tight">KeyCraft</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" 
+                aria-controls="navbarMain" aria-expanded="false" aria-label="Переключить навигацию">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#advantages">Преимущества</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#popular">Популярное</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="order.html">Заказ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-2">
+            <button type="button" class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#quickOrderModal" data-bs-product="KeyCraft Pro 75">
+              Консультация
+            </button>
+            <a href="order.html" class="btn btn-primary btn-sm d-flex align-items-center gap-1">
+              <span>Корзина</span>
+              <span class="badge bg-white text-primary rounded-pill">2</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="flex-grow-1 py-4">
+    <div class="container">
+
+      <!-- Хлебные крошки (Breadcrumb) -->
+      <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Главная</a></li>
+          <li class="breadcrumb-item"><a href="catalog.html" class="text-decoration-none">Каталог</a></li>
+          <li class="breadcrumb-item"><a href="catalog.html" class="text-decoration-none">Клавиатуры 75%</a></li>
+          <li class="breadcrumb-item active" aria-current="page">KeyCraft Pro 75</li>
+        </ol>
+      </nav>
+
+      <!-- Детальная секция товара (Сетка Bootstrap: col-lg-6 + col-lg-6) -->
+      <div class="card border-0 shadow-sm p-4 mb-5 bg-white">
+        <div class="row g-5 align-items-center">
+
+          <!-- Левая колонка: Галерея и бейджи -->
+          <div class="col-12 col-lg-6">
+            <div class="product-gallery-main shadow-sm mb-3">
+              <span class="badge badge-hit position-absolute top-0 start-0 m-3 px-3 py-2 fs-6">
+                Хит продаж
+              </span>
+              <img id="mainProductImage" src="images/product-1.svg" alt="Беспроводная клавиатура KeyCraft Pro 75" class="img-fluid">
+            </div>
+
+            <!-- Миниатюры для интерактивного переключения -->
+            <div class="d-flex gap-2 justify-content-center">
+              <button type="button" class="product-thumb-btn active" data-img-src="images/product-1.svg" aria-label="Вид спереди">
+                <img src="images/product-1.svg" alt="Миниатюра 1">
+              </button>
+              <button type="button" class="product-thumb-btn" data-img-src="images/hero-keyboard.svg" aria-label="Ракурс под углом">
+                <img src="images/hero-keyboard.svg" alt="Миниатюра 2">
+              </button>
+              <button type="button" class="product-thumb-btn" data-img-src="images/product-4.svg" aria-label="Вид в ретро гамме">
+                <img src="images/product-4.svg" alt="Миниатюра 3">
+              </button>
+            </div>
+
+            <div class="d-flex flex-wrap gap-2 justify-content-center mt-3">
+              <span class="badge bg-light text-dark border">Gasket Mount</span>
+              <span class="badge bg-light text-dark border">Hot-Swap Kailh</span>
+              <span class="badge bg-light text-dark border">Bluetooth 5.0 + 2.4G</span>
+              <span class="badge bg-light text-dark border">RGB Backlight</span>
+            </div>
+          </div>
+
+          <!-- Правая колонка: Информация, параметры, кнопки -->
+          <div class="col-12 col-lg-6">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <span class="badge bg-primary-subtle text-primary fw-bold text-uppercase">Клавиатуры 75%</span>
+              <span class="badge bg-success-subtle text-success fw-semibold">● В наличии на складе (14 шт)</span>
+            </div>
+
+            <h1 class="display-6 fw-bold text-dark mb-2">KeyCraft Pro 75 Wireless</h1>
+
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="rating-stars">★★★★★</div>
+              <span class="text-muted small">4.9 (48 отзывов покупателей)</span>
+              <span class="text-muted small border-start ps-3">Артикул: KC-75-PRO-RED</span>
+            </div>
+
+            <!-- Блок цены с бейджем скидки -->
+            <div class="d-flex align-items-baseline gap-3 mb-4 bg-light p-3 rounded-3 border">
+              <span class="display-6 fw-bold text-primary mb-0">11 990 ₽</span>
+              <span class="text-muted text-decoration-line-through fs-5">13 490 ₽</span>
+              <span class="badge badge-discount px-2 py-1">-11% Выгода</span>
+            </div>
+
+            <p class="text-secondary mb-4">
+              Флагманская клавиатура формата 75% с металлическим регулятором громкости, шумоизоляцией Poron и свитчами с заводской смазкой Krytox 205g0. Разъемы Hot-Swap позволяют менять переключатели без пайки за считанные секунды.
+            </p>
+
+            <!-- Выбор установленных переключателей -->
+            <div class="mb-4">
+              <label class="form-label fw-bold small text-uppercase text-muted">Тип переключателей:</label>
+              <div class="d-flex flex-wrap gap-2">
+                <input type="radio" class="btn-check" name="switch_type" id="sw-red" autocomplete="off" checked>
+                <label class="btn btn-outline-dark btn-sm" for="sw-red">Linear Red (тихие 45г)</label>
+
+                <input type="radio" class="btn-check" name="switch_type" id="sw-brown" autocomplete="off">
+                <label class="btn btn-outline-dark btn-sm" for="sw-brown">Tactile Brown (тактильные 55г)</label>
+
+                <input type="radio" class="btn-check" name="switch_type" id="sw-silver" autocomplete="off">
+                <label class="btn btn-outline-dark btn-sm" for="sw-silver">Speed Silver (турнирные 40г)</label>
+              </div>
+            </div>
+
+            <!-- Дополнительное оповещение (Alert) -->
+            <div class="alert alert-success d-flex align-items-center py-2 px-3 small mb-4" role="alert">
+              <div class="me-2 fs-5">🚚</div>
+              <div>Бесплатная курьерская доставка по Москве или до пункта СДЭК по РФ при заказе сегодня.</div>
+            </div>
+
+            <!-- Кнопки действия (btn, modal trigger, toast) -->
+            <div class="d-grid gap-2 d-md-flex">
+              <a href="order.html" class="btn btn-primary btn-lg flex-md-fill shadow-sm">
+                Оформить заказ
+              </a>
+              <button type="button" class="btn btn-outline-primary btn-lg flex-md-fill" data-bs-toggle="modal" data-bs-target="#quickOrderModal" data-bs-product="KeyCraft Pro 75">
+                Купить в 1 клик
+              </button>
+              <button type="button" class="btn btn-outline-secondary btn-lg btn-add-to-cart" data-product-title="KeyCraft Pro 75" title="Добавить в корзину">
+                🛒
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Дополнительный компонент: Вкладки (Tabs) для подробной информации -->
+      <div class="card border-0 shadow-sm p-4 mb-5 bg-white">
+        <ul class="nav nav-tabs nav-fill mb-4" id="productTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active fw-bold" id="specs-tab" data-bs-toggle="tab" data-bs-target="#specs-pane" type="button" role="tab" aria-controls="specs-pane" aria-selected="true">
+              Характеристики
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link fw-bold" id="bundles-tab" data-bs-toggle="tab" data-bs-target="#bundles-pane" type="button" role="tab" aria-controls="bundles-pane" aria-selected="false">
+              Сравнение комплектаций
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link fw-bold" id="delivery-tab" data-bs-toggle="tab" data-bs-target="#delivery-pane" type="button" role="tab" aria-controls="delivery-pane" aria-selected="false">
+              Доставка и гарантия
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link fw-bold" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews-pane" type="button" role="tab" aria-controls="reviews-pane" aria-selected="false">
+              Отзывы покупателей (48)
+            </button>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="productTabsContent">
+
+          <!-- Вкладка 1: Таблица спецификаций (table, table-striped, table-hover) -->
+          <div class="tab-pane fade show active" id="specs-pane" role="tabpanel" aria-labelledby="specs-tab" tabindex="0">
+            <h3 class="h5 fw-bold mb-3 text-dark">Полные технические параметры KeyCraft Pro 75</h3>
+            <div class="table-responsive">
+              <table class="table table-striped table-hover align-middle table-specs">
+                <caption class="visually-hidden">Спецификация клавиатуры KeyCraft Pro 75</caption>
+                <tbody>
+                  <tr>
+                    <th scope="row">Форм-фактор</th>
+                    <td>75% (84 клавиши + поворотный металлический энкодер громкости)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Конструкция корпуса</th>
+                    <td>Gasket Mount (демпфирующие силиконовые прокладки + шумоизоляция Poron)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Материал корпуса</th>
+                    <td>Анодированный авиационный алюминий 6063 CNC</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Разъемы свитчей</th>
+                    <td>Kailh Hot-Swap 5-pin / 3-pin (ресурс до 10 000 замен без пайки)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Предустановленные свитчи</th>
+                    <td>KeyCraft Linear Red (сила 45г, смазка штока и пружины Krytox 205g0)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Кейкапы</th>
+                    <td>PBT Double-Shot толщиной 1.5 мм, профиль Cherry, символы не стираются</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Подключение</th>
+                    <td>Радиоканал 2.4 ГГц (донгл), Bluetooth 5.0 (до 3 устройств), кабель USB Type-C</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Аккумулятор</th>
+                    <td>Литий-ионный 4000 мАч (до 200 часов автономной работы без подсветки)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Подсветка</th>
+                    <td>RGB 16.8 млн цветов с поклавишной настройкой и боковой иллюминацией</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Совместимость</th>
+                    <td>Windows, macOS, Linux, iOS, Android (аппаратный тумблер на задней панели)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Габариты и масса</th>
+                    <td>328 × 142 × 40 мм, масса 1 450 г (устойчива на любой поверхности)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Вкладка 2: Сравнительная таблица комплектаций -->
+          <div class="tab-pane fade" id="bundles-pane" role="tabpanel" aria-labelledby="bundles-tab" tabindex="0">
+            <h3 class="h5 fw-bold mb-3 text-dark">Сравнение вариантов комплектации</h3>
+            <div class="table-responsive">
+              <table class="table table-bordered table-hover align-middle text-center">
+                <thead class="table-light">
+                  <tr>
+                    <th scope="col" class="text-start">Опции и компоненты</th>
+                    <th scope="col" style="width: 25%;">Базовая (Classic)</th>
+                    <th scope="col" class="table-primary" style="width: 25%;">Расширенная (Pro) ★</th>
+                    <th scope="col" style="width: 25%;">Кастом (Ultimate)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" class="text-start">Клавиатура в сборе</th>
+                    <td><span class="text-success fw-bold">✓</span> Да</td>
+                    <td class="table-primary"><span class="text-success fw-bold">✓</span> Да</td>
+                    <td><span class="text-success fw-bold">✓</span> Да</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start">Заводская смазка свитчей Krytox</th>
+                    <td>—</td>
+                    <td class="table-primary"><span class="text-success fw-bold">✓</span> Да</td>
+                    <td><span class="text-success fw-bold">✓</span> Индивидуальная ручная</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start">Шумоизоляция Poron</th>
+                    <td>Нижний слой</td>
+                    <td class="table-primary">Двойной сэндвич Poron + IXPE</td>
+                    <td>Тройной слой + Tape-mod</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start">Кабель в комплекте</th>
+                    <td>Стандартный PVC</td>
+                    <td class="table-primary">Плетеный витой Type-C</td>
+                    <td>Авиатор-кабель Custom Coiled</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="text-start">Дополнительный набор кейкапов</th>
+                    <td>—</td>
+                    <td class="table-primary">Акцентные Enter + Esc</td>
+                    <td>Полный сменный набор PBT</td>
+                  </tr>
+                  <tr class="fw-bold">
+                    <th scope="row" class="text-start">Итоговая стоимость</th>
+                    <td>9 990 ₽</td>
+                    <td class="table-primary text-primary fs-5">11 990 ₽</td>
+                    <td>15 490 ₽</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Вкладка 3: Доставка и гарантия -->
+          <div class="tab-pane fade" id="delivery-pane" role="tabpanel" aria-labelledby="delivery-tab" tabindex="0">
+            <h3 class="h5 fw-bold mb-3 text-dark">Условия отправки и гарантийного обслуживания</h3>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="border rounded-3 p-3 h-100">
+                  <h4 class="h6 fw-bold text-primary mb-2">Способы доставки</h4>
+                  <ul class="text-secondary small mb-0 ps-3">
+                    <li class="mb-2"><strong>Самовывоз из шоурума:</strong> Бесплатно (Москва, ул. Радио, 22, м. Бауманская).</li>
+                    <li class="mb-2"><strong>Яндекс Доставка:</strong> Доставка курьером в течение 3 часов по Москве — 450 ₽ (от 10 000 ₽ — бесплатно).</li>
+                    <li><strong>СДЭК по России:</strong> В пункт выдачи за 2–4 дня — от 250 ₽ (при заказе от 5 000 ₽ — бесплатно).</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="border rounded-3 p-3 h-100">
+                  <h4 class="h6 fw-bold text-primary mb-2">Гарантия и возврат</h4>
+                  <ul class="text-secondary small mb-0 ps-3">
+                    <li class="mb-2"><strong>Официальная гарантия 24 месяца:</strong> Бесплатный ремонт платы, замена контроллеров и сокетов.</li>
+                    <li class="mb-2"><strong>14 дней на тестирование:</strong> Если вам не подойдет эргономика или звук, вернем деньги без вопросов.</li>
+                    <li><strong>Сервисная мастерская:</strong> Доступна замена свитчей, моддинг стабилизаторов и чистка клавиатур.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Вкладка 4: Отзывы -->
+          <div class="tab-pane fade" id="reviews-pane" role="tabpanel" aria-labelledby="reviews-tab" tabindex="0">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <div>
+                <h3 class="h5 fw-bold text-dark mb-0">Отзывы покупателей KeyCraft Pro 75</h3>
+                <span class="text-muted small">Средний рейтинг 4.9 из 5 на основе 48 подтвержденных покупок</span>
+              </div>
+              <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#quickOrderModal" data-bs-product="Отзыв на KeyCraft Pro 75">
+                Оставить отзыв
+              </button>
+            </div>
+
+            <div class="vstack gap-3">
+              <div class="border rounded-3 p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <strong class="text-dark">Артем В.</strong>
+                    <span class="badge bg-success-subtle text-success small">Купил товар</span>
+                  </div>
+                  <div class="rating-stars">★★★★★</div>
+                </div>
+                <p class="text-secondary small mb-1">
+                  «Перешел на Pro 75 с мембранки — небо и земля! Тяжелый алюминиевый корпус не скользит по столу, регулятор громкости крутится с приятными тактильными кликами. Звук тайпинга бархатистый.»
+                </p>
+                <span class="text-muted" style="font-size: 0.75rem;">12 октября 2026 г.</span>
+              </div>
+
+              <div class="border rounded-3 p-3">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <strong class="text-dark">Екатерина М.</strong>
+                    <span class="badge bg-success-subtle text-success small">Купил товар</span>
+                  </div>
+                  <div class="rating-stars">★★★★★</div>
+                </div>
+                <p class="text-secondary small mb-1">
+                  «Очень удобно переключаться между рабочим Mac и домашним игровым ПК по радиоканалу и Bluetooth. Батарею заряжаю примерно раз в месяц.»
+                </p>
+                <span class="text-muted" style="font-size: 0.75rem;">5 октября 2026 г.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Блок сопутствующих товаров (Сетка Bootstrap card) -->
+      <section class="py-4">
+        <h2 class="h4 fw-bold text-dark mb-4">С этим товаром также покупают</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+          <div class="col">
+            <div class="card h-100 card-product shadow-sm">
+              <div class="product-img-box">
+                <span class="badge badge-hit product-badge-overlay">Топ выбор</span>
+                <img src="images/product-5.svg" alt="Свитчи Linear Red" class="img-fluid">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <span class="text-muted small">Переключатели</span>
+                <h3 class="h6 card-title fw-bold">
+                  <a href="product.html" class="text-dark text-decoration-none">Свитчи Linear Red (70 шт)</a>
+                </h3>
+                <div class="mt-auto pt-2 d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-dark">2 490 ₽</span>
+                  <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#quickOrderModal" data-bs-product="Свитчи Linear Red (70 шт)">
+                    В корзину
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 card-product shadow-sm">
+              <div class="product-img-box">
+                <span class="badge badge-new product-badge-overlay">Новинка</span>
+                <img src="images/product-6.svg" alt="Кейкапы Gradient Wave" class="img-fluid">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <span class="text-muted small">Кейкапы</span>
+                <h3 class="h6 card-title fw-bold">
+                  <a href="product.html" class="text-dark text-decoration-none">Кейкапы Gradient Wave PBT</a>
+                </h3>
+                <div class="mt-auto pt-2 d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-dark">3 290 ₽</span>
+                  <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#quickOrderModal" data-bs-product="Кейкапы Gradient Wave PBT">
+                    В корзину
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 card-product shadow-sm">
+              <div class="product-img-box">
+                <span class="badge badge-new product-badge-overlay">Компакт</span>
+                <img src="images/product-2.svg" alt="Клавиатура KeyCraft Master 65" class="img-fluid">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <span class="text-muted small">Клавиатуры 65%</span>
+                <h3 class="h6 card-title fw-bold">
+                  <a href="product.html" class="text-dark text-decoration-none">KeyCraft Master 65 Walnut</a>
+                </h3>
+                <div class="mt-auto pt-2 d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-dark">9 490 ₽</span>
+                  <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#quickOrderModal" data-bs-product="KeyCraft Master 65">
+                    В корзину
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Модальное окно «Быстрый заказ» -->
+  <div class="modal fade" id="quickOrderModal" tabindex="-1" aria-labelledby="quickOrderModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h2 class="modal-title h5" id="quickOrderModalLabel">Оформление заявки в 1 клик</h2>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <form action="order.html" method="post">
+          <div class="modal-body">
+            <p class="text-muted small mb-3">Оставьте контактные данные, и специалист KeyCraft перезвонит вам для подтверждения заказа.</p>
+
+            <div class="mb-3">
+              <label for="modalUserName" class="form-label">Ваше имя <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="modalUserName" name="user_name" placeholder="Алексей Панов" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="modalUserPhone" class="form-label">Телефон <span class="text-danger">*</span></label>
+              <div class="input-group">
+                <span class="input-group-text">+7</span>
+                <input type="tel" class="form-control" id="modalUserPhone" name="user_phone" placeholder="(999) 123-45-67" required>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="modalUserEmail" class="form-label">Электронная почта <span class="text-danger">*</span></label>
+              <input type="email" class="form-control" id="modalUserEmail" name="user_email" placeholder="example@keycraft.ru" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="modalProductChoice" class="form-label">Выбранный товар <span class="text-danger">*</span></label>
+              <select class="form-select" id="modalProductChoice" name="product_choice" required>
+                <option value="KeyCraft Pro 75" selected>KeyCraft Pro 75 (11 990 ₽)</option>
+                <option value="KeyCraft Master 65">KeyCraft Master 65 (9 490 ₽)</option>
+                <option value="KeyCraft Ultra TKL">KeyCraft Ultra TKL (9 340 ₽)</option>
+                <option value="KeyCraft Retro Classic">KeyCraft Retro Classic (8 790 ₽)</option>
+                <option value="Свитчи Linear Red (70 шт)">Свитчи Linear Red 70 шт (2 490 ₽)</option>
+                <option value="Кейкапы Gradient Wave PBT">Кейкапы Gradient Wave PBT (3 290 ₽)</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="modalComment" class="form-label">Комментарий к заказу</label>
+              <textarea class="form-control" id="modalComment" name="comment" rows="2" placeholder="Укажите желаемые свитчи или вопросы"></textarea>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="yes" id="modalConsent" name="consent" required checked>
+              <label class="form-check-label small text-secondary" for="modalConsent">
+                Я даю согласие на обработку персональных данных в соответствии с политикой конфиденциальности <span class="text-danger">*</span>
+              </label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+            <button type="submit" class="btn btn-primary">Подтвердить заявку</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Всплывающее уведомление (Toast) -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1080;">
+    <div id="notificationToast" class="toast align-items-center text-bg-primary border-0 shadow-lg" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body fs-6">
+          Уведомление KeyCraft: Товар добавлен в корзину!
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Закрыть"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Подвал сайта -->
+  <footer class="bg-dark text-white pt-5 pb-4 mt-auto">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <div class="col-12 col-md-4">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <img src="images/logo.svg" alt="KeyCraft" height="32">
+            <span class="fs-4 fw-bold">KeyCraft</span>
+          </div>
+          <p class="text-secondary small">
+            Интернет-магазин и студия кастомизации механических клавиатур. Создаем комфортные инструменты для печати и побед с 2024 года.
+          </p>
+          <div class="small text-secondary">
+            Шоурум: Москва, ул. Радио, 22<br>
+            Телефон: +7 (495) 123-45-67
+          </div>
+        </div>
+
+        <div class="col-6 col-md-2">
+          <h4 class="h6 fw-bold text-uppercase text-light mb-3">Навигация</h4>
+          <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
+            <li><a href="index.html" class="footer-link">Главная</a></li>
+            <li><a href="catalog.html" class="footer-link">Каталог</a></li>
+            <li><a href="product.html" class="footer-link">Товар дня</a></li>
+            <li><a href="order.html" class="footer-link">Оформление заказа</a></li>
+            <li><a href="contacts.html" class="footer-link">Контакты шоурума</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <h4 class="h6 fw-bold text-uppercase text-light mb-3">Категории</h4>
+          <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
+            <li><a href="catalog.html" class="footer-link">Клавиатуры 75%</a></li>
+            <li><a href="catalog.html" class="footer-link">Компактные 65%</a></li>
+            <li><a href="catalog.html" class="footer-link">Турнирные TKL (80%)</a></li>
+            <li><a href="catalog.html" class="footer-link">Механические свитчи</a></li>
+            <li><a href="catalog.html" class="footer-link">PBT Кейкапы</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <h4 class="h6 fw-bold text-uppercase text-light mb-3">Контрольная работа №2</h4>
+          <p class="small text-secondary mb-2">
+            Дисциплина: Фронтенд и бэкенд разработка<br>
+            Студент: Панов Алексей Алексеевич<br>
+            Группа: ЭФБО-13-25<br>
+            Фреймворк: Bootstrap 5.3.3 (Local)
+          </p>
+          <span class="badge bg-success">Готово к сдаче</span>
+        </div>
+      </div>
+
+      <div class="border-top border-secondary pt-3 text-center text-secondary small">
+        &copy; 2026 KeyCraft. Все права защищены. Разработано в рамках КР №2 по дисциплине «Фронтенд и бэкенд разработка».
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

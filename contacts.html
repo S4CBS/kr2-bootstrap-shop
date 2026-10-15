@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты и шоурум в Москве | KeyCraft</title>
+  <meta name="description" content="Адрес шоурума, режим работы, телефоны и форма обратной связи студии кастомных клавиатур KeyCraft в Москве.">
+
+  <!-- Локальное подключение Bootstrap CSS -->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <!-- Пользовательские стили проекта поверх Bootstrap -->
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+  <!-- Навигационная панель (Navbar) -->
+  <header class="sticky-top shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2" aria-label="Основная навигация">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <img src="images/logo.svg" alt="KeyCraft Логотип" class="navbar-brand-logo">
+          <span class="fw-bold tracking-tight">KeyCraft</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" 
+                aria-controls="navbarMain" aria-expanded="false" aria-label="Переключить навигацию">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#advantages">Преимущества</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#popular">Популярное</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="order.html">Заказ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-2">
+            <button type="button" class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#quickOrderModal" data-bs-product="Консультация в шоуруме">
+              Консультация
+            </button>
+            <a href="order.html" class="btn btn-primary btn-sm d-flex align-items-center gap-1">
+              <span>Корзина</span>
+              <span class="badge bg-white text-primary rounded-pill">2</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="flex-grow-1 py-4">
+    <div class="container">
+
+      <!-- Хлебные крошки (Breadcrumb) -->
+      <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Главная</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Контакты и шоурум</li>
+        </ol>
+      </nav>
+
+      <!-- Заголовок страницы -->
+      <div class="mb-4">
+        <h1 class="fw-bold text-dark mb-2">Контакты и фирменный шоурум KeyCraft</h1>
+        <p class="text-muted mb-0">Приглашаем протестировать тайпинг клавиатур, сравнить 40 видов переключателей и пообщаться с нашими мастерами.</p>
+      </div>
+
+      <!-- Сетка контактов: Данные шоурума (col-12 col-lg-5) + Форма обратной связи (col-12 col-lg-7) -->
+      <div class="row g-4 mb-5">
+
+        <!-- Колонка 1: Реквизиты и адрес шоурума -->
+        <section class="col-12 col-lg-5">
+          <div class="card border-0 shadow-sm p-4 bg-white h-100">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <span class="badge bg-primary-subtle text-primary fw-bold text-uppercase px-3 py-1 rounded-pill">
+                Главный шоурум
+              </span>
+              <span class="badge bg-success-subtle text-success small">Открыто сейчас</span>
+            </div>
+
+            <h2 class="h4 fw-bold text-dark mb-4">Студия в Москве</h2>
+
+            <div class="vstack gap-3 text-secondary mb-4">
+              <div class="d-flex align-items-start gap-3">
+                <span class="fs-4">📍</span>
+                <div>
+                  <strong class="text-dark d-block">Адрес шоурума:</strong>
+                  105005, г. Москва, ул. Радио, д. 22 (м. Бауманская, 7 минут пешком)
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3">
+                <span class="fs-4">⏰</span>
+                <div>
+                  <strong class="text-dark d-block">Время работы:</strong>
+                  Ежедневно с 10:00 до 21:00 (без перерывов и выходных)
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3">
+                <span class="fs-4">📞</span>
+                <div>
+                  <strong class="text-dark d-block">Телефон горячей линии:</strong>
+                  <a href="tel:+74951234567" class="text-decoration-none fw-semibold text-primary">+7 (495) 123-45-67</a>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3">
+                <span class="fs-4">✉️</span>
+                <div>
+                  <strong class="text-dark d-block">Электронная почта:</strong>
+                  <a href="mailto:shop@keycraft.ru" class="text-decoration-none fw-semibold text-primary">shop@keycraft.ru</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Дополнительный информационный алерт -->
+            <div class="alert alert-info border-0 shadow-sm mt-auto mb-0" role="alert">
+              <h3 class="h6 alert-heading fw-bold mb-1">Стенд прослушивания тайпинга</h3>
+              <p class="small mb-0">В демонстрационном зале установлен открытый стенд с 40 разновидностями свитчей и всеми материалами плейтов (FR4, поликарбонат, алюминий, латунь).</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Колонка 2: Форма обратной связи -->
+        <section class="col-12 col-lg-7">
+          <div class="card border-0 shadow-sm p-4 bg-white h-100">
+            <h2 class="h4 fw-bold text-dark mb-2">Напишите нам сообщение</h2>
+            <p class="text-muted small mb-4">Если у вас есть вопрос по наличию, хотите записаться на персональное прослушивание или заказать кастомный моддинг — заполните форму ниже.</p>
+
+            <form id="contactFeedbackForm" action="contacts.html" method="post">
+
+              <div class="row g-3 mb-3">
+                <!-- Поле: Имя -->
+                <div class="col-12 col-md-6">
+                  <label for="contactName" class="form-label fw-semibold">Ваше имя <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="contactName" name="contact_name" placeholder="Алексей" required>
+                </div>
+
+                <!-- Поле: Телефон с input-group -->
+                <div class="col-12 col-md-6">
+                  <label for="contactPhone" class="form-label fw-semibold">Телефон</label>
+                  <div class="input-group">
+                    <span class="input-group-text bg-light">+7</span>
+                    <input type="tel" class="form-control" id="contactPhone" name="contact_phone" placeholder="(999) 123-45-67">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Поле: Email -->
+              <div class="mb-3">
+                <label for="contactEmail" class="form-label fw-semibold">Электронная почта <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" id="contactEmail" name="contact_email" placeholder="alex@example.ru" required>
+              </div>
+
+              <!-- Поле: Тема обращения (form-select) -->
+              <div class="mb-3">
+                <label for="contactSubject" class="form-label fw-semibold">Тема обращения <span class="text-danger">*</span></label>
+                <select class="form-select" id="contactSubject" name="contact_subject" required>
+                  <option value="">Выберите тему сообщения</option>
+                  <option value="showroom_visit" selected>Запись в шоурум на тестирование свитчей</option>
+                  <option value="custom_assembly">Заказ индивидуальной кастомной сборки</option>
+                  <option value="modding_service">Услуги смазки и шумоизоляции клавиатуры</option>
+                  <option value="warranty">Вопрос по гарантии и сервисному обслуживанию</option>
+                  <option value="other">Другой вопрос</option>
+                </select>
+              </div>
+
+              <!-- Поле: Сообщение (textarea) -->
+              <div class="mb-3">
+                <label for="contactMessage" class="form-label fw-semibold">Текст сообщения <span class="text-danger">*</span></label>
+                <textarea class="form-control" id="contactMessage" name="contact_message" rows="4" placeholder="Опишите ваши пожелания или модель клавиатуры, которая вас интересует..." required></textarea>
+              </div>
+
+              <!-- Поле: Прикрепление файла (form-control type=file) -->
+              <div class="mb-3">
+                <label for="contactFile" class="form-label fw-semibold">Прикрепить фото или спецификацию (необязательно)</label>
+                <input class="form-control" type="file" id="contactFile" name="attachment">
+                <div class="form-text">Поддерживаются форматы PNG, JPG, PDF размером до 10 МБ.</div>
+              </div>
+
+              <!-- Чекбокс согласия (form-check, required) -->
+              <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" id="contactConsent" name="consent" required checked>
+                <label class="form-check-label text-secondary small" for="contactConsent">
+                  Я даю согласие на обработку персональных данных в соответствии с правилами конфиденциальности <span class="text-danger">*</span>
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg w-100 shadow-sm fw-bold">
+                Отправить сообщение &rarr;
+              </button>
+
+            </form>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- FAQ шоурума (Accordion) -->
+      <section class="card border-0 shadow-sm p-4 bg-white mb-4">
+        <h2 class="h4 fw-bold text-dark mb-4 text-center">Часто задаваемые вопросы о визите в шоурум</h2>
+
+        <div class="accordion shadow-sm col-lg-10 mx-auto" id="accordionShowroom">
+
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="showHeadingOne">
+              <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#showCollapseOne" aria-expanded="true" aria-controls="showCollapseOne">
+                Нужно ли предварительно записываться перед визитом в шоурум?
+              </button>
+            </h3>
+            <div id="showCollapseOne" class="accordion-collapse collapse show" aria-labelledby="showHeadingOne" data-bs-parent="#accordionShowroom">
+              <div class="accordion-body text-secondary">
+                Предварительная запись необязательна: вы можете свободно прийти в любое удобное время с 10:00 до 21:00. Однако, если вы хотите провести глубокую кастомную сборку с нашим старшим инженером и смазать свитчи на месте, рекомендуем оставить заявку через форму выше.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="showHeadingTwo">
+              <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#showCollapseTwo" aria-expanded="false" aria-controls="showCollapseTwo">
+                Есть ли удобная парковка рядом с шоурумом?
+              </button>
+            </h3>
+            <div id="showCollapseTwo" class="accordion-collapse collapse" aria-labelledby="showHeadingTwo" data-bs-parent="#accordionShowroom">
+              <div class="accordion-body text-secondary">
+                Да, перед зданием на ул. Радио предусмотрена городская муниципальная парковка, а также гостевые парковочные места во внутреннем дворе (для въезда сообщите номер автомобиля менеджеру по телефону).
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="showHeadingThree">
+              <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#showCollapseThree" aria-expanded="false" aria-controls="showCollapseThree">
+                Можно ли принести свою клавиатуру на обслуживание или моддинг?
+              </button>
+            </h3>
+            <div id="showCollapseThree" class="accordion-collapse collapse" aria-labelledby="showHeadingThree" data-bs-parent="#accordionShowroom">
+              <div class="accordion-body text-secondary">
+                Конечно! Наша мастерская обслуживает любые механические клавиатуры с Hot-Swap и паяными платами: мы выполняем ультразвуковую чистку кейкапов, смазку свитчей Krytox 205g0, проклейку стабилизаторов (Holee Mod) и установку шумоизоляции Poron.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Модальное окно «Быстрый заказ» -->
+  <div class="modal fade" id="quickOrderModal" tabindex="-1" aria-labelledby="quickOrderModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h2 class="modal-title h5" id="quickOrderModalLabel">Консультация эксперта KeyCraft</h2>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <form action="order.html" method="post">
+          <div class="modal-body">
+            <p class="text-muted small mb-3">Оставьте контактные данные, и специалист KeyCraft перезвонит вам в течение 10 минут.</p>
+
+            <div class="mb-3">
+              <label for="modalUserName" class="form-label">Ваше имя <span class="text-danger">*</span></label>
+              <input type="text" class="form-control" id="modalUserName" name="user_name" placeholder="Алексей Панов" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="modalUserPhone" class="form-label">Телефон <span class="text-danger">*</span></label>
+              <div class="input-group">
+                <span class="input-group-text">+7</span>
+                <input type="tel" class="form-control" id="modalUserPhone" name="user_phone" placeholder="(999) 123-45-67" required>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="modalUserEmail" class="form-label">Электронная почта <span class="text-danger">*</span></label>
+              <input type="email" class="form-control" id="modalUserEmail" name="user_email" placeholder="example@keycraft.ru" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="modalProductChoice" class="form-label">Тема консультации <span class="text-danger">*</span></label>
+              <select class="form-select" id="modalProductChoice" name="product_choice" required>
+                <option value="Визит в шоурум" selected>Визит в шоурум на тестирование свитчей</option>
+                <option value="KeyCraft Pro 75">KeyCraft Pro 75 (11 990 ₽)</option>
+                <option value="KeyCraft Master 65">KeyCraft Master 65 (9 490 ₽)</option>
+                <option value="KeyCraft Ultra TKL">KeyCraft Ultra TKL (9 340 ₽)</option>
+                <option value="Кастомная сборка">Индивидуальная кастомная сборка под ключ</option>
+              </select>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="yes" id="modalConsent" name="consent" required checked>
+              <label class="form-check-label small text-secondary" for="modalConsent">
+                Я даю согласие на обработку персональных данных <span class="text-danger">*</span>
+              </label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+            <button type="submit" class="btn btn-primary">Отправить заявку</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Всплывающее уведомление (Toast) -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1080;">
+    <div id="notificationToast" class="toast align-items-center text-bg-primary border-0 shadow-lg" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body fs-6">
+          Ваше сообщение успешно отправлено! Мы свяжемся с вами в ближайшее время.
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Закрыть"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Подвал сайта -->
+  <footer class="bg-dark text-white pt-5 pb-4 mt-auto">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <div class="col-12 col-md-4">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <img src="images/logo.svg" alt="KeyCraft" height="32">
+            <span class="fs-4 fw-bold">KeyCraft</span>
+          </div>
+          <p class="text-secondary small">
+            Интернет-магазин и студия кастомизации механических клавиатур. Создаем комфортные инструменты для печати и побед с 2024 года.
+          </p>
+          <div class="small text-secondary">
+            Шоурум: Москва, ул. Радио, 22<br>
+            Телефон: +7 (495) 123-45-67
+          </div>
+        </div>
+
+        <div class="col-6 col-md-2">
+          <h4 class="h6 fw-bold text-uppercase text-light mb-3">Навигация</h4>
+          <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
+            <li><a href="index.html" class="footer-link">Главная</a></li>
+            <li><a href="catalog.html" class="footer-link">Каталог</a></li>
+            <li><a href="product.html" class="footer-link">Товар дня</a></li>
+            <li><a href="order.html" class="footer-link">Оформление заказа</a></li>
+            <li><a href="contacts.html" class="footer-link">Контакты шоурума</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <h4 class="h6 fw-bold text-uppercase text-light mb-3">Категории</h4>
+          <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
+            <li><a href="catalog.html" class="footer-link">Клавиатуры 75%</a></li>
+            <li><a href="catalog.html" class="footer-link">Компактные 65%</a></li>
+            <li><a href="catalog.html" class="footer-link">Турнирные TKL (80%)</a></li>
+            <li><a href="catalog.html" class="footer-link">Механические свитчи</a></li>
+            <li><a href="catalog.html" class="footer-link">PBT Кейкапы</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-3">
+          <h4 class="h6 fw-bold text-uppercase text-light mb-3">Контрольная работа №2</h4>
+          <p class="small text-secondary mb-2">
+            Дисциплина: Фронтенд и бэкенд разработка<br>
+            Студент: Панов Алексей Алексеевич<br>
+            Группа: ЭФБО-13-25<br>
+            Фреймворк: Bootstrap 5.3.3 (Local)
+          </p>
+          <span class="badge bg-success">Готово к сдаче</span>
+        </div>
+      </div>
+
+      <div class="border-top border-secondary pt-3 text-center text-secondary small">
+        &copy; 2026 KeyCraft. Все права защищены. Разработано в рамках КР №2 по дисциплине «Фронтенд и бэкенд разработка».
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
