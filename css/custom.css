@@ -1,0 +1,220 @@
+/* ==========================================================================
+   custom.css — Пользовательские стили проекта KeyCraft
+   Подключается строго после Bootstrap (vendor/bootstrap/css/bootstrap.min.css)
+   Не дублирует Bootstrap, а дополняет его фирменным стилем и эффектами.
+   ========================================================================== */
+
+/* 1. Фирменные переменные и базовые акценты проекта */
+:root {
+  --kc-brand-primary: #0057b8;
+  --kc-brand-dark: #0f172a;
+  --kc-bg-surface-subtle: #f8fafc;
+  --kc-card-border: #e2e8f0;
+  --kc-badge-hit: #d97706;
+  --kc-badge-new: #059669;
+  --kc-badge-discount: #dc2626;
+  --kc-transition-base: 0.25s ease-in-out;
+}
+
+/* 2. Навигация и шапка */
+.navbar-brand-logo {
+  height: 38px;
+  width: auto;
+  transition: transform var(--kc-transition-base);
+}
+
+.navbar-brand:hover .navbar-brand-logo {
+  transform: rotate(-6deg) scale(1.05);
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+  padding-left: 0.85rem !important;
+  padding-right: 0.85rem !important;
+  transition: color var(--kc-transition-base);
+}
+
+/* 3. Hero-блок (первый экран) */
+.hero-banner {
+  background: radial-gradient(circle at 10% 20%, #f8fafc 0%, #e2e8f0 100%);
+  border-bottom: 1px solid #cbd5e1;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-banner::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(13, 110, 253, 0.08) 0%, rgba(255, 255, 255, 0) 70%);
+  pointer-events: none;
+}
+
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0 15px 25px rgba(15, 23, 42, 0.15));
+  transition: transform 0.4s ease;
+}
+
+.hero-img:hover {
+  transform: translateY(-6px) scale(1.02);
+}
+
+/* 4. Карточки товаров и hover-эффекты */
+.card-product {
+  transition: transform var(--kc-transition-base), box-shadow var(--kc-transition-base), border-color var(--kc-transition-base);
+  border-color: var(--kc-card-border);
+}
+
+.card-product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.1) !important;
+  border-color: #94a3b8;
+}
+
+.product-img-box {
+  background: linear-gradient(145deg, #f8fafc 0%, #edf2f7 100%);
+  border-top-left-radius: var(--bs-card-inner-border-radius);
+  border-top-right-radius: var(--bs-card-inner-border-radius);
+  padding: 1.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-img-box img {
+  max-height: 150px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.35s ease;
+}
+
+.card-product:hover .product-img-box img {
+  transform: scale(1.06);
+}
+
+/* Бейджи поверх изображения карточки */
+.product-badge-overlay {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 2;
+}
+
+/* 5. Фирменные цвета бейджей */
+.badge-hit {
+  background-color: var(--kc-badge-hit) !important;
+  color: #ffffff !important;
+}
+
+.badge-new {
+  background-color: var(--kc-badge-new) !important;
+  color: #ffffff !important;
+}
+
+.badge-discount {
+  background-color: var(--kc-badge-discount) !important;
+  color: #ffffff !important;
+}
+
+/* 6. Рейтинг (звезды) */
+.rating-stars {
+  color: #f59e0b;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+}
+
+/* 7. Детальная страница товара */
+.product-gallery-main {
+  background: linear-gradient(145deg, #f8fafc 0%, #e2e8f0 100%);
+  border-radius: 1rem;
+  padding: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.product-gallery-main img {
+  max-height: 320px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.product-thumb-btn {
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  background: #ffffff;
+  transition: border-color var(--kc-transition-base);
+}
+
+.product-thumb-btn:hover,
+.product-thumb-btn.active {
+  border-color: var(--bs-primary);
+}
+
+.product-thumb-btn img {
+  height: 56px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* 8. Таблицы спецификаций */
+.table-specs th {
+  background-color: #f8fafc;
+  width: 35%;
+  font-weight: 600;
+}
+
+/* 9. Преимущества и иконки */
+.feature-icon-wrapper {
+  width: 64px;
+  height: 64px;
+  background-color: rgba(13, 110, 253, 0.08);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  transition: transform var(--kc-transition-base), background-color var(--kc-transition-base);
+}
+
+.card:hover .feature-icon-wrapper {
+  transform: scale(1.1);
+  background-color: rgba(13, 110, 253, 0.16);
+}
+
+.feature-icon-wrapper img {
+  width: 32px;
+  height: 32px;
+}
+
+/* 10. Боковая панель оформления заказа */
+.order-summary-card {
+  border-top: 4px solid var(--bs-primary);
+}
+
+/* 11. Подвал сайта */
+.footer-link {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color var(--kc-transition-base);
+}
+
+.footer-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* 12. Плавная прокрутка */
+html {
+  scroll-behavior: smooth;
+}
